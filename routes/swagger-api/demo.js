@@ -30,6 +30,6 @@ exports.demoPost = function(req, res) {
  * @returns {Error}  default - Unexpected error
  */
 exports.uploadFile = function(req, res) {
-    res.setHeader('Content-Type', 'multipart/form-data');
+    res.setHeader('Content-Type', 'application/json;charset=utf-8');
     res.send({ result: true, message: 'POST file ok' });
 };
