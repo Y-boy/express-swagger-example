@@ -7,4 +7,8 @@ router.get('/', function(req, res) {
   xhrObj.doGet(req, res);
 });
 
+router.post('/file', function(req, res) {
+  xhrObj.uploadFile(req, res);
+});
+
 module.exports = router;

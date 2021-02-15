@@ -4,7 +4,7 @@
  * @returns {object} 200 - An array of user info
  * @returns {Error}  default - Unexpected error
  */
-exports.doGet = function(req, res) {
+exports.demoGet = function(req, res) {
     res.setHeader('Content-Type', 'application/json;charset=utf-8');
     res.send({ result: true, message: 'GET ok' });
 };
@@ -16,7 +16,7 @@ exports.doGet = function(req, res) {
  * @returns {object} 200 - An array of user info
  * @returns {Error}  default - Unexpected error
  */
-exports.doPost = function(req, res) {
+exports.demoPost = function(req, res) {
     res.setHeader('Content-Type', 'application/json;charset=utf-8');
     res.send({ result: true, message: 'POST ok' });
 };
@@ -25,11 +25,11 @@ exports.doPost = function(req, res) {
  * api for file uploading
  * @route POST /file
  * @group file
- * @param {file} file.required - 选择文件
+ * @param {file} file.formData.required - 选择文件
  * @returns {object} 200 - An array of user info
  * @returns {Error}  default - Unexpected error
  */
-exports.doPost = function(req, res) {
+exports.uploadFile = function(req, res) {
     res.setHeader('Content-Type', 'multipart/form-data');
     res.send({ result: true, message: 'POST file ok' });
 };
