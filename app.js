@@ -44,7 +44,7 @@ expressSwagger({
     docs: '/swagger.json' //swagger文件 api
   },
   basedir: __dirname, //app absolute path
-  files: ['./routes/swagger-api/*.js'] //Path to the API handle folder
+  files: ['./routes/*.js'] //Path to the API handle folder
 });
 app.use('/', indexRouter);
 
